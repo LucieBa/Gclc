@@ -11,6 +11,8 @@ var Twig = require('twig'), // Twig module
 // Création du serveur
 var app = express() ;
 app.get('/', function (req, res) {
-  	res.render('main_page.html.twig');
+  res.render('main_page.html.twig', {
+    message : "Hello World"
+  });
 })
 var server = app.listen(e8888) ;
