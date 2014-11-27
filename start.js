@@ -1,4 +1,6 @@
-
+/////////////////////////////////////////////////////////
+//			Requires
+/////////////////////////////////////////////////////////
 _ = require("lodash") ; // Bibliothèque permettant d'étendre les capacités du JS classique : https://lodash.com/docs
 var express = require('express') // Bilbliothèque permettant de créer le serveur web (remplace Apache) ;
 var Twig = require('twig'), // Twig module
@@ -9,8 +11,6 @@ var Twig = require('twig'), // Twig module
 // Création du serveur
 var app = express() ;
 app.get('/', function (req, res) {
-  res.render('vue.html.twig', {
-    message : "Hello World"
-  });
+  	res.render('main_page.html.twig');
 })
-var server = app.listen(8888) ;
+var server = app.listen(e8888) ;
