@@ -72,7 +72,22 @@ if(k&&j[k]&&(e||j[k].data)||void 0!==d||"string"!=typeof b)return k||(k=i?a[h]=c
 					FTP...
 				</span>
 				<span class="news cache">
-					News...
+					<h1>News</h1>
+					<form style="background-color:grey">
+						<h2>Rédiger une actualité</h2>
+						<input placeholder="Titre" required></input><br />
+						<textarea placeholder="Texte de la news" required></textarea><br />
+						<button type="button">Envoyer</button>
+					</form>
+
+					<div>
+						<h2>Fil des actualités</h2>
+						{#{% for %}
+							<div>
+								<h3></h3>
+							</div>
+						{% endfor %}#}
+					</div>
 				</span>
 				<span class="mail cache">
 					Mail...
